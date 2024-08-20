@@ -31,12 +31,17 @@
             left: 50%; 
             transform: translate(-50%, -50%); 
             color: #13B3F2;
-            padding: 10px 20px; 
-            font-size: 20px; 
+            padding: 10px 20px;
+            font-size: 20px;
             text-align: center;
+            width: 10%; /* Adjust this to control the size of the overlay text */
+            min-width: 300px; /* Sets a minimum width for the container */
+            white-space: nowrap; /* Prevents the text from wrapping */
         }
-        .overlay-text > p{
+
+        .overlay-text > p {
             color: white;
+            white-space: normal; /* Allows paragraphs to wrap normally if needed */
         }
         .pro{
             text-decoration: underline;
@@ -46,7 +51,22 @@
             position: absolute;
             width: 150px; /* Adjust this value to the desired size */
         }
-
+        .top-cloud{
+            left: 20%;
+        }
+        .bottom-cloud{
+            right: 20%;
+        }
+        .sam-space-ship{
+            width: 1000px; /* Set a consistent width */
+            height: 1000 px; /* Set a consistent height */
+            top: 70%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            padding: 10px 20px; 
+            font-size: 20px; 
+            text-align: center;
+        }
         hr{
             border: dotted #13B3F2 6px;
             border-bottom: none;
@@ -66,6 +86,7 @@
             width: 150px; /* Set a consistent width */
             height: 150px; /* Set a consistent height */
             object-fit: cover; /* Ensure images maintain their aspect ratio */
+            margin-right: 20px; /* Adds space on the right side of the images */
         }
         div.parent{
             display: grid;
@@ -75,6 +96,10 @@
             margin: 100px auto 0 auto;
             text-align: left;
             row-gap: 2rem;
+        }
+        .summary {
+            margin-left: 20px; /* Adds space on the left side of the paragraph */
+            margin-right: 20px; /* Adds space on the right side of the paragraph */
         }
     </style>
 </head>
@@ -100,22 +125,22 @@
             <img class="uniform-img" src="./VR-radiology-screencap.png" alt="VR radiology screencap">
           </div>
           <div class="coding">
-            <h3>Design &amp; Development</h3>
-            <p>I started learning to code in high school and have developed that skill through college. I have developed video games, web apps, virtual reality radiology labs and games, and many other various small scale projects</p>
+            <h3 class="summary">Design &amp; Development</h3>
+            <p class="summary">I started learning to code in high school and have developed that skill through college. I have developed video games, web apps, virtual reality radiology labs and games, and many other various small scale projects</p>
           </div>
           <div class="chillies">
             <img class="chilli-img uniform-img" src="./vegan-champ.jpg" alt="Sam winning 3rd place in a chilli contest">
           </div>
           <div class="hot-wings">
-            <h3>Expert Vegan Cook</h3>
-            <p>Won third place in a normal chilli contest with VEGAN CHILLI. Also make a mean vegan cajun fried tofu pasta</p>
+            <h3 class="summary">Expert Vegan Cook</h3>
+            <p class="summary">Won third place in a normal chilli contest with VEGAN CHILLI. Also make a mean vegan cajun fried tofu pasta</p>
           </div>
         </div>
         <hr>
         <div class="contact-me">
           <h2>Get In Touch</h2>
-          <h3>If you love hot wings as much as I do.</h3>
-          <p class="contact-message">Love hot wings as much as I do? Let's talk about how awesome they are! We can code while we eat hot wings!</p>
+          <h3>If you love vegan food as much as I do.</h3>
+          <p class="contact-message">Need some work done or wanna chat?</p>
           <a class="btn" href="mailto:ilove@hotwings.com">CONTACT ME</a>
         </div>
       </div>
